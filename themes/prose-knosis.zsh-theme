@@ -17,7 +17,7 @@ function box_name {
 }
 
 PROMPT='%{$fg[magenta]%}%n%{$reset_color%} at %{$fg[yellow]%}$(box_name)%{$reset_color%} in %{$fg[green]%}${PWD/#$HOME/~}%{$reset_color%} $(vcprompt_info) $(virtualenv_info)
-%(?,,%{${fg_bold[white]}%}[%?]%{$reset_color%} )@ '
+%(?,,%{${bg[red]}%}%{$fg[white]%}[%?]%{$reset_color%} )%# '
 
-local return_status="%{$fg[red]%}%(?..✘)%{$reset_color%}"
-RPROMPT='${return_status}%{$reset_color%}'
+# local return_status="%{$fg[red]%}%(?..×)%{$reset_color%}"
+# RPROMPT='${return_status}%{$reset_color%}'
